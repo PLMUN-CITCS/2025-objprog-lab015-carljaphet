@@ -1,0 +1,12 @@
+public class VariableScope{
+    static int globalCount =100;
+    public static void main(String[] args){
+        System.out.println("Global count (from main): " + globalCount);
+        showScope();
+    }
+    public static void showScope(){
+        int localCount=50;
+        System.out.println("global count (from showScope): " + globalCount);
+        System.out.println("local count (from showScope): " + localCount);
+    }
+}
